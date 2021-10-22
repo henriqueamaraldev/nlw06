@@ -7,7 +7,8 @@ export class AlterUserAddPassword1634933344624 implements MigrationInterface {
             'users',
             new TableColumn({
                 name: 'password',
-                type: 'varchar'
+                type: 'varchar',
+                isNullable: true
             })
         )
     }
