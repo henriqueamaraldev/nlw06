@@ -1,7 +1,6 @@
 import { getCustomRepository } from "typeorm";
 import { ComplimentsRepositories } from "../repositories/ComplimentsRepositories";
-import { classToPlain } from 'class-transformer';
-import { dto } from '../dtos/agendamentoDTO';
+import { dto } from '../dtos/ListUserSendComplimentsDTO';
 
 
 class ListUserSendComplimentsService {
