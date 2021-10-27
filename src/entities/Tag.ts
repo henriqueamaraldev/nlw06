@@ -17,10 +17,6 @@ class Tag {
     @UpdateDateColumn()
     updated_at: Date;
 
-    @Expose({name: 'name_custom'})
-    nameCustom(): string {
-        return `#${this.name}`;
-    }
     constructor() {
         if (!this.id){
             this.id = uuid();

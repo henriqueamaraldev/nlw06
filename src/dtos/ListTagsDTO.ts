@@ -1,16 +1,19 @@
-import { User } from '../entities/User'
+import { Tag } from '../entities/Tag'
 
 
-const dto = (data: User[]) => {
+const dto = (data: Tag[]) => {
 
     const newList = data.map((value) => {
-   
+
+        function nameCustom(): string {
+            return `#${value.name}`;
+        }
         var newObject = {
-            Name: value.name,
-            Email: value.email,
+            Name: nameCustom(),
             Created_at: value.created_at,
             Updated_at: value.updated_at,
-            Admin: value.admin
+            ID: value.id
+
         };
         
         return newObject;
