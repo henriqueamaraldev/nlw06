@@ -1,6 +1,6 @@
 import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 import  { v4 as uuid } from "uuid";
-import { Expose } from 'class-transformer'
+
 
 @Entity('tags')
 class Tag {
