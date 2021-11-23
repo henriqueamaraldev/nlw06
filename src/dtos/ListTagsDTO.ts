@@ -1,4 +1,4 @@
-import { Tag } from '../entities/Tag'
+import { Tag } from '../entities/Tag';
 
 
 const dto = (data: Tag[]) => {
@@ -13,9 +13,8 @@ const dto = (data: Tag[]) => {
             Created_at: value.created_at,
             Updated_at: value.updated_at,
             ID: value.id
-
         };
-        
+
         return newObject;
     })
     return newList;
